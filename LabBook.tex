@@ -1,0 +1,62 @@
+%----------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------
+
+\documentclass[idxtotoc,hyperref,openany]{labbook}
+
+\usepackage[ 
+  backref=page,
+  pdfpagelabels=true,
+  plainpages=false,
+  colorlinks=true,
+  bookmarks=true,
+  pdfview=FitB]{hyperref}
+  
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength\parindent{0pt}
+
+%----------------------------------------------------------------------------
+%	DEFINITION OF EXPERIMENTS
+%----------------------------------------------------------------------------
+
+\newexperiment{PPD}{PPD Repair After Campaign}
+
+%----------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------
+
+\frontmatter % Use Roman numerals for page numbers
+\title{
+\begin{center}
+\HRule \\[0.4cm]
+{\Huge \bfseries Laboratory Journal}\\[0.4cm]
+\HRule \\[1.5cm]
+\end{center}
+}
+\author{\Huge Jessica Girdwood \\ \\ \LARGE jessgirdwood@protonmail.com \\[2cm]}
+\date{Beginning 20\textsuperscript{th} March 2023}
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+
+%----------------------------------------------------------------------------
+%	LAB BOOK CONTENTS
+%----------------------------------------------------------------------------
+
+
+\labday{20 March 2023}
+
+\experiment{PPD}
+
+\end{document}

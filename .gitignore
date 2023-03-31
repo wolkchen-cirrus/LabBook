@@ -1,0 +1,7 @@
+*.log
+*.idx
+*.out
+*.pdf
+*.gz
+*.toc
+*.aux
