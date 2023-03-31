@@ -1,0 +1,11 @@
+#!/bin/sh
+
+MAIN_FN="LabBook.tex"
+
+FN=LabDays/$(date -d $1 +%F).tex
+echo "$FN created"
+touch $FN && echo "\labday{$(date -d $1 '+%-d %B %Y')}" > $FN
+
+LN=$(grep -n "include{LabDays/" $MAIN_FN | cut -d : -f 1 | tail -1)
+FN="$(cut -d'.' -f1 <<<$FN)"
+sed -i "$LN a \\\\\\include{$FN}" $MAIN_FN
