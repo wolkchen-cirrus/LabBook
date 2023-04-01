@@ -5,4 +5,6 @@
 *.gz
 *.toc
 *.aux
+*.ps
+*.dvi
 ~
