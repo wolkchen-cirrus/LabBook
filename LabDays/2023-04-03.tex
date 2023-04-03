@@ -1,0 +1,39 @@
+\labday{3 April 2023}
+
+\experiment{FibrePull}
+
+In order to achieve fibre calibrations, small fibres must be constructed. Bill Martin has lent us a pipette puller, which he has had some success with.
+
+\experiment{MAZ04}
+
+\begin{itemize}
+\item 5 UCASS units from the batch do not work.
+\item The diodes are attached firmly.
+\item The laser power is reasonable.
+\item The alignment is reasonable.
+\item They all draw either too much or too little current.
+\end{itemize}
+
+In order to test the UCASS units, the fibre-LED setup was used with the outputs of the TIAs monitored.
+
+\textbf{UCASS-AD-MAZ04-011:}
+
+The unit was drawing too little current. The connections between boards were in the correct order, and there were no visible shorts. Wires were soldered onto the TIA outputs and to a grounding point (this will also be used for the fibre calibration at a later date). The scope output was positive-going when observed with a scope, however turned negative-going after wiggleing some wires around, when a fibre was inserted into the beam, the voltage dropped on both detectors, indicating the prsence of something in the beam. The outer detector was saturated, but the inner was not (potential bad alignment). There were still no counts on the software.
+
+I attempted to reprogram the board with the 12id firmware. However, the unit stopped being able to read the infostring part-way through, and threw errors at me. After the laser is warmed up, the unit now draws the correct amount of current. The bootloader was re-programmed and the 13spi firmware was loaded onto the board. ExpBins were programmed, and the GSC was set to 1. The device still registered no counts or reject counts with the water spray. \textbf{This unit has been marked for realignment of elipsoidal mirror}.
+
+\textbf{UCASS-AA-MAZ04-001:}
+
+The unit was drawing too little current. Wired were soldered to the outputs of the TIAs (along with a grounding wire) and the output was measured when a fibre was inserted into the device. The fibre saturated both detectors, which indicates reasonable alignment. As with the previous unit, the current stealily rose as the laser warmed up.
+
+\experiment{MeetPID}
+
+\begin{itemize}
+\item New laptops.
+\item Warren has a flashing light on a uOPC.
+\item Rob's update on fibre pulling. Currently the fibre is snapping before pulling.
+\item Myriad can be used as a noun or an adjective.
+\end{itemize}
+
+
+
