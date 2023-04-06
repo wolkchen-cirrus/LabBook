@@ -1,0 +1,16 @@
+\labday{6 April 2023}
+
+\experiment{MAZ04}
+
+\textbf{UCASS-AD-MAZ04-009:}
+
+Still no response from the software with the fibre-test apperatus. The unit is drawing the correct current, which indicates an issue with communication bewtween the boards. One of the opamps was still disconnected, I missed it in the first pass. It was the output of the third stage, so I did not detect a shift in current. The connecting wires seemed reasonable. The instrument now works properly while tested, with a less braod distribution than other UCASS units.
+
+\textbf{UCASS-AA-MAZ04-003:}
+
+Draws about \SI{200}{\milli\ampere}, which is clearly too much. Suspected short. There was a visible shot in one of the opamps, this was corrected. The unit now draws \SI{130}{\milli\ampere} which is a little too high, however it was decided to be sufficient for testing. There were still no counts, and the current rose to \SI{140}{\milli\ampere} after a short time. Further inspection revealed another short on a different opamp. The issue was fixed and the unit now draws reasonable current. The unit was tested again, which was successful.
+
+\textbf{UCASS-AD-MAZ04-008:}
+
+Visible shorts in two places on opamps. The shorts were fixed, but the unit still draws too little current (only slightly). There were no counts on the software, and the R15 channel looked strange, the pulse sloped down and was not square like the other.
+
