@@ -4,7 +4,15 @@
 
 \textbf{UCASS-AA-MAZ04-001 continued:}
 
-It was decided, in order to rule out firmware or software issues, that the UCASS could be triggered using the fibre LED to view output counts. The laser turned itself off, but was reactivated when the unit was power-cycled. Blue-tac was positioned over the beamstop, the lights were switched off. The frequency of the pulse-generator was set to \SI{10}{\hertz} for 10 particles per second, the pulse width to \SI{10}{\micro\second}, and the ampitude to \SI{1}{\volt}---enough to activate the LED but not saturate the TIA. There were no couts observed, which indicates that the problem lies in the electronics as opposed to the alignment. This was conducive to the results of the fibre measurement. Inspection of the unit confirmed that one of the opamps responsible for DC-restoration was not attached properly, which was due to bad soldering. The chip was soldered on properly, and the other opamps were checked for defects (one other was found), I now believe this is what was wrong with 011 and will check the board again before removing the mirror. The unit now draws the correct amount of current. \textbf{Counts are now registered at \SI{1179}{ADC} for an input of \SI{900}{\milli\volt}}. The device now works properly with sample aerosol.
+It was decided, in order to rule out firmware or software issues, that the UCASS could be triggered using the fibre LED to view output counts. The laser turned itself off, but was reactivated when the unit was power-cycled. Blue-tac was positioned over the beamstop, the lights were switched off. The frequency of the pulse-generator was set to \SI{10}{\hertz} for 10 particles per second, the pulse width to \SI{10}{\micro\second}, and the ampitude to \SI{1}{\volt}---enough to activate the LED but not saturate the TIA. The setup is pictured in Fig. \ref{fig:UCASSFibreRig}. There were no couts observed, which indicates that the problem lies in the electronics as opposed to the alignment. This was conducive to the results of the fibre measurement. Inspection of the unit confirmed that one of the opamps responsible for DC-restoration was not attached properly, which was due to bad soldering. The chip was soldered on properly, and the other opamps were checked for defects (one other was found), I now believe this is what was wrong with 011 and will check the board again before removing the mirror. The unit now draws the correct amount of current. \textbf{Counts are now registered at \SI{1179}{ADC} for an input of \SI{900}{\milli\volt}}. The device now works properly with sample aerosol.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Figures/UCASSFibreRig}
+\end{center}
+\caption{Fibre test setup for UCASS.}
+\label{fig:UCASSFibreRig}
+\end{figure}
 
 \textbf{UCASS-AD-MAZ04-011 continued:}
 
