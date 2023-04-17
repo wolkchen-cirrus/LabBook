@@ -1,0 +1,15 @@
+\labday{17 April 2023}
+
+\experiment{MeetPID}
+
+\begin{itemize}
+\item lattepanda works, the box doesn't.
+\item uopc first measurements seem reasonable, slight time delay.
+\item test hdf5 formatter on pig farm data.
+\end{itemize}
+
+\experiment{MAZ03}
+
+UCASS-AD-MAZ04-011 had an op-amp leg missing, which was rectified. The unit now works with droplet spray.
+
+UCASS-AD-MAZ04-009 required re-alignment. However, once realigned, the unit displayed similar symptoms to 011 (combination of problems). The TIA output when droplets are sprayed through seems reasonable, with lots of nice gaussian pulses, meaning the alignment is likely sufficient. Lots of counts are registeded in the first bin, in addition to a normal response from other bins. Upon inspection, 2-3 of the wires which conenct the A and D boards together had been ripped out. The wires were soldered back on, but the unit now only shows counts above 3800 ADC. There may be a loose connection somewhere.
